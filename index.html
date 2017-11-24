@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script src="/socket.io/socket.io.js"></script>
+
+</head>
+<body>
+	<input type="text" id="send-input" />
+
+</body>
+
+<script type="text/javascript">
+	var socket = io('http://10.2.151.230');
+	socket.on('welcome', function (data) {
+			console.log(data);
+	});
+</script>
+</html>
